@@ -28,7 +28,7 @@ RUN wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | apt-key ad
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y  postgresql-9.5
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y postgresql-contrib-9.5
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y postgresql-9.5-postgis-2.1
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y postgresql-9.5-postgis-2.2
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y libpq-dev
 
 # /etc/ssl/private can't be accessed from within container for some reason
